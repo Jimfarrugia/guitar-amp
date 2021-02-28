@@ -6,6 +6,8 @@ const visualizer = document.getElementById('visualizer');
 
 const context = new AudioContext();
 
+setupContext();
+
 async function setupContext() {
 	const guitar = await getGuitar();
 	if (context.state === 'suspended') {
